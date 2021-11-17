@@ -7,7 +7,7 @@ document.addEventListener('keyup', logKey);
 
 function logKey(e) {
   //myWindow =window.open('e.key','_blank');
-document.getElementById("dor").innerHTML=e.key;
+document.getElementById("dor").innerHTML+=e.key;
   setTimeout(closeWin, 10000);
 }
 
