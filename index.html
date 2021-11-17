@@ -8,8 +8,17 @@ document.addEventListener('keyup', logKey);
 function logKey(e) {
   //myWindow =window.open('e.key','_blank');
   if(e.key!= "Enter"){   
-document.getElementById("dor").innerHTML+=e.key;
+        if(e.key= "Shift;"){   
+document.getElementById("dor").innerHTML+=":";
   }
+    else{
+document.getElementById("dor").innerHTML+=e.key;
+    }
+  }
+
+  
+  
+  
     if(e.key == "Enter"){   
       myWindow =window.open(document.getElementById("dor").innerHTML,'_blank');
       document.getElementById("dor").innerHTML=""
