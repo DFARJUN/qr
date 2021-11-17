@@ -7,8 +7,14 @@ document.addEventListener('keyup', logKey);
 
 function logKey(e) {
   //myWindow =window.open('e.key','_blank');
+  if(e.key!= "ENTER"){   
 document.getElementById("dor").innerHTML+=e.key;
-  setTimeout(closeWin, 10000);
+  }
+    if(e.key == "ENTER"){   
+      myWindow =window.open(document.getElementById("dor").innerHTML,'_blank');
+      document.getElementById("dor").innerHTML=""
+      setTimeout(closeWin, 10000);
+  }
 }
 
 function closeWin() {
