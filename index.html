@@ -6,7 +6,8 @@ var myWindow;
 document.addEventListener('keyup', logKey);
 
 function logKey(e) {
-  myWindow =window.open('e.key','_blank');
+  //myWindow =window.open('e.key','_blank');
+document.getElementById("dor").innerhtml="sdf";
   setTimeout(closeWin, 10000);
 }
 
@@ -15,10 +16,8 @@ function closeWin() {
 }
 </script>
 
-<p><b>This text is bold</b></p>
-<p><i>This text is italic</i></p>
-<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-
+<p id="dor"><b>This text is bold</b></p>
+<input>
 </body>
 </html>
 
