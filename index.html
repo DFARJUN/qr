@@ -25,6 +25,7 @@ text-align: center;
   
   function myFunction(){
     console.log("!");
+    setInterval(function(){ document.getElementById("oleg").focus(); }, 1000);
     document.getElementById("oleg").addEventListener('keyup', logKey);
     oleg.focus();
   }
