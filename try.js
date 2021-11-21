@@ -8,7 +8,7 @@
 
 function logKey(e){
   if(e.key=="Enter"){
-    indow.open(N.value,'_self');
+    window.open(N.value,'_self');
     N.value="";
     N.focus();
   }
