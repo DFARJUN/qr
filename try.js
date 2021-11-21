@@ -1,6 +1,6 @@
   
   function listenQr(){
-    setInterval(function(){ document.querySelector("#print-input").focus(); }, 1000);
+    setInterval(function(){ document.querySelector("#print-input").focus(); }, 500);
     document.querySelector("#print-input").addEventListener('keyup', logKey);
   }
 document.addEventListener("DOMContentLoaded", () => listenQr());
